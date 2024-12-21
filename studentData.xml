@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE Students [
+    <!ELEMENT Students (Student+)>
+    <!ELEMENT Student (ID, Name, Age, Gender, Department)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Age (#PCDATA)>
+    <!ELEMENT Gender (#PCDATA)>
+    <!ELEMENT Department (#PCDATA)>
+]>
+
+
+<!-- The + symbol means that the Student element must appear one or more times within Students. 
+This ensures there is at least one Student record in the document. -->
+
+<!-- 
+This defines that a Student element must include all these sub-elements (ID, Name, Age, Gender, and Department) in the specified order. -->
+
+
+<!-- 
+#PCDATA indicates that the ID element contains parsed character data (text). This applies to other elements like Name, Age, etc. -->
+
+
+<?xml-stylesheet type="text/xsl" href="studentStyle.xsl"?>
+<Students>
+    <Student>
+        <ID>1</ID>
+        <Name>John Doe</Name>
+        <Age>20</Age>
+        <Gender>Male</Gender>
+        <Department>Computer Science</Department>
+    </Student>
+    <Student>
+        <ID>2</ID>
+        <Name>Jane Smith</Name>
+        <Age>22</Age>
+        <Gender>Female</Gender>
+        <Department>Mathematics</Department>
+    </Student>
+    <Student>
+        <ID>3</ID>
+        <Name>Michael Brown</Name>
+        <Age>21</Age>
+        <Gender>Male</Gender>
+        <Department>Physics</Department>
+    </Student>
+    <Student>
+        <ID>4</ID>
+        <Name>Emily Davis</Name>
+        <Age>19</Age>
+        <Gender>Female</Gender>
+        <Department>Biology</Department>
+    </Student>
+    <Student>
+        <ID>5</ID>
+        <Name>Chris Wilson</Name>
+        <Age>23</Age>
+        <Gender>Male</Gender>
+        <Department>Chemistry</Department>
+    </Student>
+    <Student>
+        <ID>6</ID>
+        <Name>Sarah Miller</Name>
+        <Age>20</Age>
+        <Gender>Female</Gender>
+        <Department>Economics</Department>
+    </Student>
+    <Student>
+        <ID>7</ID>
+        <Name>David Lee</Name>
+        <Age>24</Age>
+        <Gender>Male</Gender>
+        <Department>Engineering</Department>
+    </Student>
+    <Student>
+        <ID>8</ID>
+        <Name>Anna Taylor</Name>
+        <Age>21</Age>
+        <Gender>Female</Gender>
+        <Department>Psychology</Department>
+    </Student>
+    <Student>
+        <ID>9</ID>
+        <Name>James Anderson</Name>
+        <Age>22</Age>
+        <Gender>Male</Gender>
+        <Department>History</Department>
+    </Student>
+    <Student>
+        <ID>10</ID>
+        <Name>Olivia Martin</Name>
+        <Age>20</Age>
+        <Gender>Female</Gender>
+        <Department>Political Science</Department>
+    </Student>
+</Students>

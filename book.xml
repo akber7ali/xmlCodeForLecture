@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="example.xsd">
+    <Book ISBN="978-3-16-148410-0">
+        <Title>Learn XML</Title>
+        <Author>John Doe</Author>
+        <Price>29.99</Price>
+    </Book>
+    <Book ISBN="978-1-23-456789-0">
+        <Title>Mastering XSD</Title>
+        <Author>Jane Smith</Author>
+        <Price>39.99</Price>
+    </Book>
+</BookStore>
